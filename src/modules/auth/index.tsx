@@ -13,7 +13,7 @@ import {Input} from "../../components/Form/Input";
 import CheckBoxSquare from "../../components/Form/CheckBox/checkBoxSquare";
 import Paths from "../../routes/paths";
 
-export const Auth = function ({className}) {
+export const Auth = function ({className, history}) {
   const [remember, setRemember] = useState(false);
   const { userState } = useContext(StateContext);
   return (
@@ -32,15 +32,14 @@ export const Auth = function ({className}) {
           </div>
         </div>
         <div className="authButtons">
-          <ButtonBase classes='P-btn-primary md' showArrow={true} onClick={() => {userState.setUser({name: 'TestUser'})}}>
-            <Link to={Paths.PROFILE}>
+          <ButtonBase classes='P-btn-primary md' showArrow={true} onClick={() => {
+            userState.setUser({name: 'TestUser'})
+            history.push(Paths.PROFILE)
+          }}>
               Sign In
-            </Link>
           </ButtonBase>
-          <ButtonBase classes='P-btn-link md'>
-            <Link to={Paths.PROFILE}>
-              Sign in with magic link 🪄
-            </Link>
+          <ButtonBase classes='P-btn-link md' onClick={() => history.push(Paths.PROFILE)}>
+            Sign in with magic link 🪄
           </ButtonBase>
         </div>
       </div>
