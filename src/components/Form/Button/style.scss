@@ -1,0 +1,22 @@
+@import '../../../assets/styles/variables';
+
+.P-btn {
+  border-radius: 8px;
+  &.md {padding: 12px 20px}
+  &.sm {padding: 8px 12px; * {font-size: 12px}}
+
+  & > img {
+    margin-left: 15px;
+  }
+}
+
+.P-btn-primary {
+  background-color: $blue;
+  color: $white;
+}
+
+.P-btn-link {
+  color: $gray-400;
+  border: 1px solid $gray-400;
+
+}

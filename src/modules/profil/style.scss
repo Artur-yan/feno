@@ -1,0 +1,113 @@
+@import '../../assets/styles/variables';
+
+.profile {
+  margin-top: 40px;
+  color: white;
+
+  .optionsSection {
+    margin-bottom: 50px;
+  }
+  .accountDashboard {
+    p {margin-bottom: 6px;margin-top: 0;}
+    .P-btn {margin-top: 6px;}
+  }
+
+  .iconWithDesc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .iconWithDescDesc {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+      line-height: 21px;
+    }
+  }
+
+  .iconWithDesc:last-of-type { margin-bottom:0; }
+
+  h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+  }
+  p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .socialLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+    .socialLoginItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      margin-left: 16px;
+      background-color: $gray-dark;
+    }
+  }
+  .authInputs {
+    margin-top: 24px;
+  }
+  .authSocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0;
+
+    .line {
+      height: 1px;
+      background-color: #4B5563;
+      width: 100%;
+    }
+
+    .signWith {
+      padding: 0 24px;
+      font-size: 16px;
+      width: 22rem;
+    }
+  }
+  .authRemember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cover {
+    text-align: center;
+  }
+
+  .actions {
+    margin-top: 42px;
+
+    h2 {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 52px;
+    }
+
+    p {
+      margin-top: 12px;
+      color: $gray-400;
+      line-height: 1.7rem;
+    }
+
+    .authButtons {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .P-btn {
+      margin-bottom: 16px;
+    }
+  }
+}

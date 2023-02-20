@@ -1,0 +1,80 @@
+@import '../../assets/styles/variables';
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+  border-bottom: 1px solid $gray-700;
+  background-color: $gray-dark;
+  padding: 0 $page-side-padding;
+
+  & > div {
+    flex: 1;
+  }
+  .userInfo {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      margin-left: 10px;
+    }
+  }
+  .center {
+    text-align: center;
+  }
+
+  .right {
+    display: flex;
+    justify-content: right;
+  }
+}
+
+.mainFooter {
+  padding: 64px $page-side-padding 64px $page-side-padding;
+
+  margin-top: auto;
+  background-color: $gray-dark;
+  display: flex;
+  flex-direction: column;
+
+  .topFooter {
+    margin-bottom: 48px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .footerSocial {
+    display: flex;
+    margin-top: 20px;
+
+    .socialItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      margin-right: 11px;
+      background-color: $gray-middle1;
+    }
+  }
+
+  .footerNav {
+    display: flex;
+    flex-direction: column;
+
+    .navGroup {
+      margin-bottom: 32px;
+
+      .title {
+        text-transform: uppercase;
+      }
+      * {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

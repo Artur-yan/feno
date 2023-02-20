@@ -1,0 +1,24 @@
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6rem;
+}
+.slideHeader {
+  display: flex;
+  align-items: center;
+  p {margin-left: auto;}
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  max-width: 263px;
+  border-radius: 8px;
+}
+
+.sliderItemPrice {
+  margin-top: auto;
+  margin-bottom: 12px;
+}

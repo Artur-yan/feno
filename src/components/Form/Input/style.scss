@@ -1,0 +1,37 @@
+@import '../../../assets/styles/variables';
+
+.baseInput {
+  display: flex;
+
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  .inputSection {
+    display: flex;
+    position: relative;
+    .inputIcon {
+      position: absolute;
+      left: 15px;
+      top: 31%;
+    }
+  }
+
+  .searchBtn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+
+  & > label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 37px;
+    background: #232528;
+    border-radius: 8px;
+    color: white;
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../assets/styles/variables';
+
+.home {
+  margin-top: 40px;
+
+  color: white;
+
+  .cover {
+    text-align: center;
+  }
+
+  .actions {
+    margin-top: 42px;
+
+    h2 {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 52px;
+    }
+
+    p {
+      margin-top: 12px;
+      color: $gray-400;
+      line-height: 1.7rem;
+    }
+
+    .authButtons {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .P-btn {
+      margin-bottom: 16px;
+    }
+  }
+}

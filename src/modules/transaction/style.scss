@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables';
+
+.transaction {
+  margin-top: 40px;
+  color: white;
+
+  .orderSection {
+    width: 100%;
+  }
+  .transactionOrder {
+    background-color: $gray-middle1;
+  }
+  .transactionDashboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    & > .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 24px;
+  }
+}

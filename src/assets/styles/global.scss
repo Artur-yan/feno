@@ -4,19 +4,68 @@
 
 .G-container {
   width: 100%;
+  max-width: $mobile-width;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .G-page {
-  //width: 100%;
-  //max-width: $page-width;
-  //background-color: $black;
-  //height: 100vh;
-  //
-  //@include mobile {
-  //  max-width: unset;
-  //}
+  width: 100%;
+  background-color: $black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    max-width: unset;
+  }
+}
+
+.G-white {
+  color: white;
+}
+
+.G-blue {
+  color: $blue;
+}
+
+.G-gray-400 {
+  * {color: $gray-400};
+}
+
+.G-mb-24 {
+  margin-bottom: 24px;
+}
+
+.G-mt-24 {
+  margin-top: 24px;
+}
+
+.G-mt-16 {
+  margin-top: 16px;
+}
+.G-mb-16 {
+  margin-bottom: 16px;
+}
+.G-line {
+  height: 1px;
+  width: 100%;
+  background-color: $gray-700;
+}
+
+.G-with-100 {
+  width: 100%;
+}
+
+.G-ml-auto {
+  margin-left: auto;
+}
+
+
+.G-main-padding {
+  padding: 0 $page-side-padding;
 }
 
 .G-capitalize {
@@ -240,9 +289,5 @@ $filterOffset     : 20px;
     &:nth-child(#{$filterItemsCount}n) {
       margin-right : 0;
     }
-  }
-
-  input {
-    background-color : $white;
   }
 }
